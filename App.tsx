@@ -1,20 +1,21 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { StyleSheet, View, Text, SafeAreaView, StatusBar } from "react-native";
+import Feed from "./src/view/Feed";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello from your new lol_social_media app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
+        <StatusBar />
+        <Feed />
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#dadada",
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
