@@ -2,6 +2,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import Profile from "../profile/Profile";
 const PostHeader = ({ data }: any) => {
+
   return (
     <View style={styles.container}>
       <Profile data={data} />

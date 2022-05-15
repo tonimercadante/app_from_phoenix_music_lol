@@ -6,8 +6,8 @@ import Nickname from "../nickname/Nickname";
 const Profile = ({ data }: any) => {
   return (
     <View style={styles.container}>
-      <Avatar avatar={data.avatar} />
-      <Nickname nickname={data.nickname} />
+      <Avatar data={data} />
+      <Nickname data={data} />
     </View>
   );
 };

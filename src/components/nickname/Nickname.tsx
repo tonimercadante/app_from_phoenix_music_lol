@@ -1,8 +1,8 @@
 // nickname component
 import { StyleSheet, Text } from "react-native";
 
-const Nickname = ({ nickname }: any) => {
-  return <Text style={styles.text}>{nickname}</Text>;
+const Nickname = ({ data }: any) => {
+  return <Text style={styles.text}>{data.nickname}</Text>;
 };
 
 // styles

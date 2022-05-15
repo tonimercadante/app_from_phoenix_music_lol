@@ -1,12 +1,9 @@
 import { Image, StyleSheet, View } from "react-native";
 
-const Avatar = ({ avatar }: any) => {
-  // log avatar
-  console.log(avatar);
-
+const Avatar = ({ data }: any) => {
   return (
     <View style={styles.container}>
-      <Image style={styles.img} source={avatar} />
+      <Image style={styles.img} source={data.avatar} />
     </View>
   );
 };

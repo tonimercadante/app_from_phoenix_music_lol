@@ -15,7 +15,8 @@ const PostText = ({ post }: PostTextProps) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ECF8F2",
+    // backgroundColor: "#ECF8F2",
+    backgroundColor: "#ECF5F1",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
