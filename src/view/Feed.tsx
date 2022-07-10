@@ -24,6 +24,18 @@ const Feed = () => {
       avatar: require("../../assets/img/football.png"),
       post: "你的动力在哪里？",
     },
+    {
+      id: "58694a0f-3da1-471f-bd96-145571e29d72",
+      nickname: "维吉尔",
+      avatar: require("../../assets/img/football.png"),
+      post: "你的动力在哪里？",
+    },
+    {
+      id: "58694a0f-3da1-471f-bd96-145571e29d77",
+      nickname: "维吉尔",
+      avatar: require("../../assets/img/football.png"),
+      post: "你的动力在哪里？",
+    },
   ]);
 
   const renderItem = ({ item }: any) => <PostContainer data={item} />;
