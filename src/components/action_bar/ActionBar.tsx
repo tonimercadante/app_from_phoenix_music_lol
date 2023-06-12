@@ -1,15 +1,21 @@
 import { Image, StyleSheet, View } from "react-native";
-import iconaim from "../../../assets/img/iconaim.png";
-import iconchat from "../../../assets/img/iconchat.png";
-import iconidk from "../../../assets/img/iconidk.png";
 
 const ActionBar = ({ data }: any) => {
   return (
     <View style={styles.container}>
       <View style={styles.bar}>
-        <Image source={iconaim} style={styles.img} />
-        <Image source={iconchat} style={styles.img} />
-        <Image source={iconidk} style={styles.img} />
+        <Image
+          source={require("../../../assets/img/iconaim.png")}
+          style={styles.img}
+        />
+        <Image
+          source={require("../../../assets/img/iconchat.png")}
+          style={styles.img}
+        />
+        <Image
+          source={require("../../../assets/img/iconidk.png")}
+          style={styles.img}
+        />
       </View>
     </View>
   );
@@ -33,6 +39,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
+  img: {},
 });
 
 export default ActionBar;
