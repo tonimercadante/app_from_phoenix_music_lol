@@ -1,5 +1,6 @@
 // create card for each post
-import { StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, View } from "react-native";
+import ActionBar from "../action_bar/ActionBar";
 import PostHeader from "../post_header/PostHeader";
 import PostText from "../post_text/PostText";
 
@@ -8,8 +9,7 @@ const PostContainer = ({ data }: any) => {
     <View style={styles.container}>
       <PostHeader data={data} />
       <PostText post={data.post} />
-
-      {/* ACTION BAR -> ICON BAR */}
+      <ActionBar />
     </View>
   );
 };
@@ -17,10 +17,10 @@ const PostContainer = ({ data }: any) => {
 // styles
 const styles = StyleSheet.create({
   container: {
-    height: 225,
+    height: Dimensions.get("window").height * 0.38,
     marginHorizontal: 4,
     marginVertical: 6,
-    flex: 1,
+    backgroundColor: "#ecf5f1",
   },
 });
 

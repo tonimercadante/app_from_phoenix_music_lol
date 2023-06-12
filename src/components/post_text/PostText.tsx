@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 interface PostTextProps {
   post: string;
@@ -15,15 +15,15 @@ const PostText = ({ post }: PostTextProps) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#ECF8F2",
     backgroundColor: "#ECF5F1",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    paddingHorizontal: 30,
   },
   text: {
     color: "#444",
-    fontSize: 20,
+    fontSize: 40,
   },
 });
 
